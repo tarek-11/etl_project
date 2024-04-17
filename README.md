@@ -1,7 +1,5 @@
 # Extract, Transform, and Load Data using Python
 
-![Skills Network Logo](skills_network_logo.png)
-
 ## Introduction
 Extract, Transform, and Load (ETL) operations are essential for Data Engineers in managing and processing data. This project focuses on implementing ETL operations using Python, where data is extracted from various sources, transformed according to specific requirements, and then loaded into a database for further analysis.
 
@@ -33,7 +31,15 @@ Note that only the `ElementTree` function is imported from the `xml.etree` libra
 
 You'll also need to define two file paths that will be used globally in the code:
 - `log_file.txt`: to store all logs generated during the ETL process.
-- `transformed_data.csv`: to store the
+- `transformed_data.csv`: to store the final transformed data ready for database loading.
+
+Add the following statements to your code to introduce these paths:
+
+```python
+log_file = "log_file.txt" 
+target_file = "transformed_data.csv" 
+```
+
 ## ETL Code Summary
 
 The `etl_code.py` script performs Extract, Transform, and Load (ETL) operations on data from various file formats. Here's a breakdown of its functionality:
@@ -59,3 +65,10 @@ The `etl_code.py` script performs Extract, Transform, and Load (ETL) operations 
 - Progress logs are written to `log_file.txt` to track the process.
 
 By running `etl_code.py`, you can perform ETL operations on your data efficiently, extracting, transforming, and loading it into a ready-to-use format for further analysis or database storage.
+
+## Conclusion
+By completing this project, you'll have gained practical experience in implementing ETL operations using Python. These skills are crucial for any aspiring Data Engineer, as ETL is a fundamental part of the data processing pipeline. 
+
+For any questions or issues, refer to the documentation or reach out to the project maintainers.
+
+Happy coding!
